@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>An-Noor Cultural Services</title>
+  <meta name="title" content="An-Noor Cultural Services">
+  <meta name="description" content="Islamic cultural and community services">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-light.svg" width="74" height="24" alt="An-Noor Cultural Services" class="logo-light">
+        <img src="./assets/images/logo-dark.svg" width="74" height="24" alt="An-Noor Cultural Services" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="74" height="24" alt="An-Noor">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          
+          <li class="dropdown">
+            <a href="#" class="navbar-link">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Who We Are</a></li>
+              <li><a href="#">Board Members</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Our Offices</a></li>
+              <li><a href="#">Financial Information</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="navbar-link">Our Programs</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Religious Support</a></li>
+              <li><a href="#">Food & Essential Aid</a></li>
+              <li><a href="#">Education & Child Welfare</a></li>
+              <li><a href="#">Emergency Assistance</a></li>
+              <li><a href="#">Development Projects</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="navbar-link">Media Center</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Project Reports</a></li>
+              <li><a href="#">Press Release</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Live</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="navbar-link">Get Involved</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Matching Gift</a></li>
+              <li><a href="#">Become a Volunteer</a></li>
+            </ul>
+          </li>
+
+          <!-- <li><a href="contact.html" class="navbar-link">Contact</a></li> -->
+          
+          <li class="dropdown">
+            <a href="#" class="navbar-link">Donor Portal</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="donate-btn">Donate</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary">Contact US</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">An-Noor Helping Hand</h1>
+
+            <p class="hero-text">
+              Serving the community through Islamic guidance, family support, and cultural services.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#" class="btn btn-primary">Our Services</a>
+
+              <a href="contact.html" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play adex intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Add this after the hero section -->
+      <section class="helping-hand-section" data-aos="fade-up" style="background-image: url('./assets/images/background-blur.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="h2 section-title">An-Noor Cultural Service</h2>
+            <p class="section-subtitle">Hope for Humanity</p>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="mission-text" data-aos="fade-up" data-aos-delay="200">
+            <p class="founding-text">
+              An-Noor Helping Hand was founded in <span class="highlight">March 2020</span>, during the pandemic, to support disadvantaged people living in extreme poverty. The organization focuses on:
+            </p>
+            <div class="focus-areas">
+              <div class="focus-item">
+                <ion-icon name="heart-outline"></ion-icon>
+                <span>Basic needs: Food, water, healthcare, and education</span>
+              </div>
+              <div class="focus-item">
+                <ion-icon name="people-outline"></ion-icon>
+                <span>Empowerment: Skill development for adults to improve their future</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="impact-report" data-aos="fade-up" data-aos-delay="400">
+            <h3>Helping Hand Bangladesh – Impact Report</h3>
+            <div class="total-beneficiaries">
+              <div class="counter">
+                <span class="count" data-target="23333">0</span>
+                <span class="label">Total Beneficiaries</span>
+              </div>
+            </div>
+
+            <div class="categories-grid">
+              <!-- Religious Support -->
+              <div class="category-card" data-aos="zoom-in">
+                <div class="card-header">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <h4>Religious Support</h4>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Quran Distribution</span>
+                  <span class="stat-value">16,000 copies</span>
+                </div>
+              </div>
+
+              <!-- Food & Essential Aid -->
+              <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card-header">
+                  <ion-icon name="fast-food-outline"></ion-icon>
+                  <h4>Food & Essential Aid</h4>
+                </div>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span class="stat-label">Ramadan Food & Eid Gifts</span>
+                    <span class="stat-value">754 families</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Qurbani Meat Distribution</span>
+                    <span class="stat-value">880 families</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Food for the Hungry</span>
+                    <span class="stat-value">1,900 families</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Covid-19 Food Drive</span>
+                    <span class="stat-value">2,500 families</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education & Child Welfare -->
+              <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card-header">
+                  <ion-icon name="school-outline"></ion-icon>
+                  <h4>Education & Child Welfare</h4>
+                </div>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span class="stat-label">Back to School Program</span>
+                    <span class="stat-value">100 students</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Orphan Care</span>
+                    <span class="stat-value">54 centers</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Aid for Children's Education</span>
+                    <span class="stat-value">6 children</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Emergency & Special Assistance -->
+              <div class="category-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card-header">
+                  <ion-icon name="medkit-outline"></ion-icon>
+                  <h4>Emergency & Special Assistance</h4>
+                </div>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span class="stat-label">Medical Assistance</span>
+                    <span class="stat-value">16 families</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Emergency Assistance</span>
+                    <span class="stat-value">21 families</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Marriage Assistance</span>
+                    <span class="stat-value">5 families</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Widow Assistance</span>
+                    <span class="stat-value">20 families</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Disaster Relief</span>
+                    <span class="stat-value">500 families</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Development Projects -->
+              <div class="category-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="card-header">
+                  <ion-icon name="construct-outline"></ion-icon>
+                  <h4>Development Projects</h4>
+                </div>
+                <div class="stats-list">
+                  <div class="stat-item">
+                    <span class="stat-label">Tube Well Project</span>
+                    <span class="stat-value">22 locations</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Reforestation</span>
+                    <span class="stat-value">300 trees</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Self-Reliance Project</span>
+                    <span class="stat-value">2 families</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-label">Rebuilding Homes</span>
+                    <span class="stat-value">25 families</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="excellence-section" data-aos="fade-up">
+            <div class="years-number">10</div>
+            <div class="excellence-content">
+              <p class="years-label">YEARS</p>
+              <h3 class="excellence-title">Years of Excellence</h3>
+              <p class="excellence-text">An-Noor Helping Hand continues its mission to uplift communities, offering hope and essential resources to those in need. 🌍💙</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">Our Services</p>
+
+          <h2 class="h2 section-title">
+            Supporting Our Community
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="book-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Religious Consultation</h3>
+
+                <p class="card-text">
+                  A service aimed to help a person alleviate their religious doubts and increase their spirituality and personal connection with God.
+                </p>
+
+                <a href="religious-consultation.html" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Family Counseling</h3>
+
+                <p class="card-text">
+                  A service that advise families through their problems with wisdom from senior experts that are well experienced in the field.
+                </p>
+
+                <a href="family-counseling.html" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="home-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Support for Immigrants</h3>
+
+                <p class="card-text">
+                  A service that aims to help new immigrants get on their feet when they are just starting out on their journey.
+                </p>
+
+                <a href="support-immigrants.html" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Funeral Assistance</h3>
+
+                <p class="card-text">
+                  A service that aims to help grieving families through the difficult process of burying their loved ones.
+                </p>
+
+                <a href="funeral-assistance.html" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Why Choose An-Noor?</p>
+
+            <h2 class="h2 section-title">
+              Dedicated to Serving Humanity
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <span class="span h5">Community-Focused Support</span>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    We provide comprehensive support to families in need through food assistance, education programs, and emergency aid, ensuring no one in our community is left behind.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <span class="span h5">Transparent Operations</span>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    We maintain complete transparency in our operations and fund allocation, ensuring your donations reach those who need them most effectively and efficiently.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <span class="span h5">Sustainable Impact</span>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Our programs focus on creating lasting change through education, skill development, and community empowerment initiatives that help families become self-reliant.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Our Impact</p>
+
+            <h2 class="h2 section-title">
+              We provide essential support to disadvantaged communities, ensuring a brighter future for those in need.
+            </h2>
+
+            <p class="section-text">
+              At An-Noor Helping Hand, we are dedicated to improving lives by addressing fundamental needs such as food, water, healthcare, and education. Our initiatives empower individuals and families, fostering self-reliance and long-term growth.
+            </p>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Providing vital aid through Ramadan food drives, Qurbani distribution, and emergency assistance to thousands of families
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="school-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Supporting education through Back to School Programs and Orphan Care Centers
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="water-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Implementing sustainable projects like Tube Wells and reforestation efforts
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Transforming over 23,000 lives through compassionate action and community support
+                  </span>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">23,333+</span>
+
+                <span class="span">Total Beneficiaries Supported</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">16,000+</span>
+
+                <span class="span">Qurans Distributed</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">5,000+</span>
+
+                <span class="span">Families Provided with Food & Essentials</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">54</span>
+
+                <span class="span">Orphan Care Centers Established</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">22</span>
+
+                <span class="span">Tube Well Locations for Clean Water</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">300+</span>
+
+                <span class="span">Trees Planted for Reforestation</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">100+</span>
+
+                <span class="span">Students Supported in Education Programs</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">500+</span>
+
+                <span class="span">Families Assisted in Disaster Relief</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">25</span>
+
+                <span class="span">Homes Rebuilt for Families in Need</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">10 Years</span>
+
+                <span class="span">of Excellence in Humanitarian Aid</span>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="project-label">Student Gallery</p>
+
+          <h2 class="h2 section-title">
+            Discover Amazing Artworks Created by Our Community
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">AI-Driven Art Instruction</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Interactive Painting Tutor (IPT) revolutionizes art education with AI-powered voice guidance and
+                    real-time feedback. Our platform offers step-by-step animated painting tutorials, ensuring an
+                    intuitive and immersive learning experience for artists of all levels.
+
+
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">14 Apr 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Coding</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-2.jpg" width="560" height="350" loading="lazy"
+                    alt="Watercolor Landscape Masterpiece" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Watercolor Landscape Masterpiece</a>
+                  </h3>
+
+                  <p class="card-text">
+                    A stunning landscape created by one of our students using techniques learned from our AI-guided
+                    watercolor courses. See how proper brush control and color theory come together.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2024-03-29">29 Mar 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Student Gallery</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">AR-Powered Virtual Painting Studio</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Experience the future of art education with IPT's dual-window interface, seamlessly integrating AI
+                    voice instruction with an AR-based virtual lab. Whether you're a beginner or a professional, our
+                    SaaS platform provides structured, interactive training to refine your artistic skills.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Meeting</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Start Your Artistic Journey Today with Interactive Painting Tutor
+          </h2>
+
+          <a href="#" class="btn btn-primary">Start Free Trial</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo-light.svg" width="74" height="24" alt="An-Noor Cultural Services">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2023 by An-Noor Cultural Center. <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Contact Us</p>
+
+        <p class="footer-text">
+          Email: info@annoorusa.org
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    .helping-hand-section {
+      padding: 100px 0;
+      background: linear-gradient(135deg, var(--light-blue) 0%, #ffffff 100%);
+      overflow: hidden;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+    }
+
+    .title-underline {
+      width: 80px;
+      height: 4px;
+      background: var(--primary-blue);
+      margin: 20px auto;
+      position: relative;
+    }
+
+    .title-underline::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      background: var(--primary-blue);
+      right: -60px;
+      opacity: 0.5;
+    }
+
+    .title-underline::before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      background: var(--primary-blue);
+      left: -60px;
+      opacity: 0.5;
+    }
+
+    .focus-areas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+
+    .focus-item {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .focus-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .focus-item ion-icon {
+      font-size: 24px;
+      color: var(--primary-blue);
+    }
+
+    .total-beneficiaries {
+      margin: 50px 0;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .counter {
+      text-align: center;
+    }
+
+    .count {
+      font-size: 4rem;
+      font-weight: bold;
+      color: var(--primary-blue);
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      margin: 60px auto;
+      padding: 0 20px;
+      max-width: 1200px;
+    }
+
+    .category-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .excellence-section {
+      margin-top: 100px;
+      padding: 60px 40px;
+      background: #0000ff;
+      border-radius: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .years-number {
+      font-size: 120px;
+      font-weight: 700;
+      color: white;
+      line-height: 1;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .excellence-content {
+      flex: 1;
+    }
+
+    .years-label {
+      font-size: 24px;
+      color: white;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+
+    .excellence-title {
+      font-size: 48px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .excellence-text {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .excellence-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .years-number {
+        font-size: 100px;
+      }
+
+      .years-label {
+        font-size: 20px;
+      }
+
+      .excellence-title {
+        font-size: 36px;
+      }
+    }
+
+    .stats-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0, 0, 204, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .stat-item:hover {
+      background: rgba(0, 0, 204, 0.05);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .stat-label {
+      color: #444;
+      font-weight: 500;
+    }
+
+    .stat-value {
+      color: var(--primary-blue);
+      font-weight: bold;
+    }
+
+    .mission-text {
+      max-width: 1200px;
+      margin: 60px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .founding-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    .highlight {
+      color: var(--primary-blue);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .focus-areas {
+        grid-template-columns: 1fr;
+      }
+      
+      .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .founding-text {
+        font-size: 1.1rem;
+        padding: 0 15px;
+      }
+    }
+
+    /* Add these styles for the dropdown menus */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      min-width: 200px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      z-index: 100;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu li {
+      padding: 0;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 12px 20px;
+      color: var(--primary-blue);
+      transition: all 0.3s ease;
+    }
+
+    .dropdown-menu a:hover {
+      background: var(--light-blue);
+    }
+
+    .donate-btn {
+      color: white !important;
+      background: var(--primary-blue) !important;
+      border-radius: 4px;
+      margin: 5px 10px;
+    }
+
+    .donate-btn:hover {
+      background: var(--dark-blue) !important;
+    }
+
+    /* Mobile responsive styles */
+    @media (max-width: 768px) {
+      .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: var(--light-blue);
+        margin: 5px 0;
+        display: none;
+      }
+
+      .dropdown.active .dropdown-menu {
+        display: block;
+      }
+
+      .navbar-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .dropdown > .navbar-link::after {
+        content: '\f3d0';
+        font-family: 'Ionicons';
+        margin-left: 5px;
+      }
+    }
+  </style>
+
+  <!-- Add AOS library for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Counter animation
+    const counters = document.querySelectorAll('.count');
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const increment = target / 200;
+      
+      const updateCounter = () => {
+        const count = +counter.innerText;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCounter, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      
+      updateCounter();
+    });
+
+    // Add this for mobile dropdown toggle
+    document.querySelectorAll('.dropdown > .navbar-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const dropdown = link.parentElement;
+          dropdown.classList.toggle('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
