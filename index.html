@@ -50,8 +50,10 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo-light.svg" width="74" height="24" alt="An-Noor Cultural Services" class="logo-light">
-        <img src="./assets/images/logo-dark.svg" width="74" height="24" alt="An-Noor Cultural Services" class="logo-dark">
+        <img src="./assets/images/logo-light.svg" width="74" height="24" alt="An-Noor Cultural Services"
+          class="logo-light">
+        <img src="./assets/images/logo-dark.svg" width="74" height="24" alt="An-Noor Cultural Services"
+          class="logo-dark">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -66,7 +68,7 @@
 
         <ul class="navbar-list">
           <li><a href="index.html" class="navbar-link">Home</a></li>
-          
+
           <li class="dropdown">
             <a href="#" class="navbar-link">About Us</a>
             <ul class="dropdown-menu">
@@ -108,7 +110,7 @@
           </li>
 
           <!-- <li><a href="contact.html" class="navbar-link">Contact</a></li> -->
-          
+
           <li class="dropdown">
             <a href="#" class="navbar-link">Donor Portal</a>
             <ul class="dropdown-menu">
@@ -167,55 +169,200 @@
             <div class="slider-inner">
               <ul class="slider-container" data-slider-container>
 
-                <li class="slider-item">
-
+                <li class="slider-item active">
                   <figure class="img-holder" style="--width: 575; --height: 550;">
-                    <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                    <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="Community support"
+                      class="img-cover">
                   </figure>
-
                 </li>
 
                 <li class="slider-item">
-
                   <div class="hero-card">
                     <figure class="img-holder" style="--width: 575; --height: 550;">
-                      <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                      <img src="./assets/images/1345255.jpg" width="575" height="550" alt="Islamic education"
                         class="img-cover">
                     </figure>
-
-                    <button class="play-btn" aria-label="play adex intro">
-                      <ion-icon name="play" aria-hidden="true"></ion-icon>
-                    </button>
                   </div>
-
                 </li>
 
                 <li class="slider-item">
-
                   <figure class="img-holder" style="--width: 575; --height: 550;">
-                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="Family support services"
+                      class="img-cover">
                   </figure>
+                </li>
 
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/close-up-people-holding-apples-bag.jpg" width="575" height="550"
+                      alt="Food distribution" class="img-cover">
+                  </figure>
+                </li>
+
+                <li class="slider-item">
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/Screenshot 2025-02-19 155712.png" width="575" height="550"
+                      alt="Community events" class="img-cover">
+                  </figure>
                 </li>
 
               </ul>
             </div>
 
-            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
-              <ion-icon name="arrow-back"></ion-icon>
-            </button>
+            <div class="slider-controls">
+              <button class="slider-btn prev" aria-label="Previous slide" data-slider-prev>
+                <ion-icon name="arrow-back"></ion-icon>
+              </button>
 
-            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
-              <ion-icon name="arrow-forward"></ion-icon>
-            </button>
+              <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+
+              <button class="slider-btn next" aria-label="Next slide" data-slider-next>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
 
           </div>
 
         </div>
       </section>
 
+      <style>
+        .hero-slider {
+          position: relative;
+          overflow: hidden;
+          border-radius: 15px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider-container {
+          display: flex;
+          transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-item {
+          flex: 0 0 100%;
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
+        }
+
+        .slider-item.active {
+          opacity: 1;
+        }
+
+        .slider-controls {
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+        }
+
+        .slider-dots {
+          display: flex;
+          gap: 8px;
+        }
+
+        .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.5);
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+
+        .dot.active {
+          background: #fff;
+        }
+
+        .slider-btn {
+          background: rgba(255, 255, 255, 0.2);
+          border: none;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+
+        .slider-btn:hover {
+          background: rgba(255, 255, 255, 0.4);
+        }
+
+        .img-holder {
+          position: relative;
+          overflow: hidden;
+        }
+
+        .img-cover {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+
+        .img-holder:hover .img-cover {
+          transform: scale(1.05);
+        }
+      </style>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const slider = document.querySelector('.slider-container');
+          const slides = document.querySelectorAll('.slider-item');
+          const dots = document.querySelectorAll('.dot');
+          let currentSlide = 0;
+
+          function updateSlider() {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+          }
+
+          function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlider();
+          }
+
+          // Auto slide every 5 seconds
+          setInterval(nextSlide, 5000);
+
+          // Manual navigation
+          document.querySelector('[data-slider-next]').addEventListener('click', nextSlide);
+          document.querySelector('[data-slider-prev]').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlider();
+          });
+
+          // Dot navigation
+          dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+              currentSlide = index;
+              updateSlider();
+            });
+          });
+        });
+      </script>
+
       <!-- Add this after the hero section -->
-      <section class="helping-hand-section" data-aos="fade-up" style="background-image: url('./assets/images/background-blur.jpg'); background-size: cover; background-position: center;">
+      <section class="helping-hand-section" data-aos="fade-up"
+        style="background-image: url('./assets/images/background-blur.jpg'); background-size: cover; background-position: center;">
         <div class="container">
           <div class="section-header">
             <h2 class="h2 section-title">An-Noor Cultural Service</h2>
@@ -225,7 +372,8 @@
 
           <div class="mission-text" data-aos="fade-up" data-aos-delay="200">
             <p class="founding-text">
-              An-Noor Helping Hand was founded in <span class="highlight">March 2020</span>, during the pandemic, to support disadvantaged people living in extreme poverty. The organization focuses on:
+              An-Noor Helping Hand was founded in <span class="highlight">March 2020</span>, during the pandemic, to
+              support disadvantaged people living in extreme poverty. The organization focuses on:
             </p>
             <div class="focus-areas">
               <div class="focus-item">
@@ -368,11 +516,12 @@
           </div>
 
           <div class="excellence-section" data-aos="fade-up">
-            <div class="years-number">10</div>
+            <div class="years-number">12</div>
             <div class="excellence-content">
               <p class="years-label">YEARS</p>
               <h3 class="excellence-title">Years of Excellence</h3>
-              <p class="excellence-text">An-Noor Helping Hand continues its mission to uplift communities, offering hope and essential resources to those in need. 🌍💙</p>
+              <p class="excellence-text">An-Noor Helping Hand continues its mission to uplift communities, offering hope
+                and essential resources to those in need.💙</p>
             </div>
           </div>
         </div>
@@ -407,7 +556,8 @@
                 <h3 class="h4 card-title">Religious Consultation</h3>
 
                 <p class="card-text">
-                  A service aimed to help a person alleviate their religious doubts and increase their spirituality and personal connection with God.
+                  A service aimed to help a person alleviate their religious doubts and increase their spirituality and
+                  personal connection with God.
                 </p>
 
                 <a href="religious-consultation.html" class="btn-text">
@@ -429,7 +579,8 @@
                 <h3 class="h4 card-title">Family Counseling</h3>
 
                 <p class="card-text">
-                  A service that advise families through their problems with wisdom from senior experts that are well experienced in the field.
+                  A service that advise families through their problems with wisdom from senior experts that are well
+                  experienced in the field.
                 </p>
 
                 <a href="family-counseling.html" class="btn-text">
@@ -451,7 +602,8 @@
                 <h3 class="h4 card-title">Support for Immigrants</h3>
 
                 <p class="card-text">
-                  A service that aims to help new immigrants get on their feet when they are just starting out on their journey.
+                  A service that aims to help new immigrants get on their feet when they are just starting out on their
+                  journey.
                 </p>
 
                 <a href="support-immigrants.html" class="btn-text">
@@ -473,7 +625,8 @@
                 <h3 class="h4 card-title">Funeral Assistance</h3>
 
                 <p class="card-text">
-                  A service that aims to help grieving families through the difficult process of burying their loved ones.
+                  A service that aims to help grieving families through the difficult process of burying their loved
+                  ones.
                 </p>
 
                 <a href="funeral-assistance.html" class="btn-text">
@@ -497,8 +650,8 @@
       <!-- 
         - #ABOUT
       -->
-
-      <section class="about" aria-labelledby="about-label">
+      <section class="about" aria-labelledby="about-label"
+        style="background-image:url(assets/images/handhelping.png); background-size: cover; background-position: center;">
         <div class="container">
 
           <figure class="about-banner">
@@ -528,7 +681,8 @@
                   </h3>
 
                   <p class="accordion-content">
-                    We provide comprehensive support to families in need through food assistance, education programs, and emergency aid, ensuring no one in our community is left behind.
+                    We provide comprehensive support to families in need through food assistance, education programs,
+                    and emergency aid, ensuring no one in our community is left behind.
                   </p>
 
                 </div>
@@ -546,7 +700,8 @@
                   </h3>
 
                   <p class="accordion-content">
-                    We maintain complete transparency in our operations and fund allocation, ensuring your donations reach those who need them most effectively and efficiently.
+                    We maintain complete transparency in our operations and fund allocation, ensuring your donations
+                    reach those who need them most effectively and efficiently.
                   </p>
 
                 </div>
@@ -564,7 +719,8 @@
                   </h3>
 
                   <p class="accordion-content">
-                    Our programs focus on creating lasting change through education, skill development, and community empowerment initiatives that help families become self-reliant.
+                    Our programs focus on creating lasting change through education, skill development, and community
+                    empowerment initiatives that help families become self-reliant.
                   </p>
 
                 </div>
@@ -602,7 +758,9 @@
             </h2>
 
             <p class="section-text">
-              At An-Noor Helping Hand, we are dedicated to improving lives by addressing fundamental needs such as food, water, healthcare, and education. Our initiatives empower individuals and families, fostering self-reliance and long-term growth.
+              At An-Noor Helping Hand, we are dedicated to improving lives by addressing fundamental needs such as food,
+              water, healthcare, and education. Our initiatives empower individuals and families, fostering
+              self-reliance and long-term growth.
             </p>
 
             <ul class="feature-list">
@@ -615,7 +773,8 @@
                   </div>
 
                   <span class="span">
-                    Providing vital aid through Ramadan food drives, Qurbani distribution, and emergency assistance to thousands of families
+                    Providing vital aid through Ramadan food drives, Qurbani distribution, and emergency assistance to
+                    thousands of families
                   </span>
 
                 </div>
@@ -678,12 +837,15 @@
         - #STATS
       -->
 
-      <section class="stats" aria-label="our stats">
+      <section class="stats" aria-label="our stats"
+        style="background-image: url('./assets/images/handhelping.png'); background-size: cover; background-position: center;">
         <div class="container">
 
-          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+          <ul class="stats-card has-bg-image"
+            style="background-image: url('./assets/images/stats-bg.jpg'); max-width: 1000px; margin: 0 auto;"
+            data-aos="fade-up">
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="100">
               <p class="card-text">
                 <span class="h1">23,333+</span>
 
@@ -691,7 +853,7 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="200">
               <p class="card-text">
                 <span class="h1">16,000+</span>
 
@@ -699,7 +861,7 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="300">
               <p class="card-text">
                 <span class="h1">5,000+</span>
 
@@ -707,7 +869,7 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="400">
               <p class="card-text">
                 <span class="h1">54</span>
 
@@ -715,7 +877,7 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="500">
               <p class="card-text">
                 <span class="h1">22</span>
 
@@ -723,7 +885,7 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="600">
               <p class="card-text">
                 <span class="h1">300+</span>
 
@@ -731,7 +893,7 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="700">
               <p class="card-text">
                 <span class="h1">100+</span>
 
@@ -739,7 +901,7 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="800">
               <p class="card-text">
                 <span class="h1">500+</span>
 
@@ -747,7 +909,7 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="900">
               <p class="card-text">
                 <span class="h1">25</span>
 
@@ -755,9 +917,9 @@
               </p>
             </li>
 
-            <li>
+            <li data-aos="zoom-in" data-aos-delay="1000">
               <p class="card-text">
-                <span class="h1">10 Years</span>
+                <span class="h1">12 Years</span>
 
                 <span class="span">of Excellence in Humanitarian Aid</span>
               </p>
@@ -776,13 +938,13 @@
         - #PROJECT
       -->
 
-      <section class="section project" aria-labelledby="project-label">
+      <section class="section project" aria-labelledby="project-label" style="background-image:url(assets/images/golden-image.png); background-size: cover; background-position: center;">
         <div class="container">
 
-          <p class="section-subtitle" id="project-label">Student Gallery</p>
+          <p class="section-subtitle" id="project-label">Our Impact</p>
 
           <h2 class="h2 section-title">
-            Discover Amazing Artworks Created by Our Community
+            Making a Difference in Our Community
           </h2>
 
           <ul class="grid-list">
@@ -792,21 +954,18 @@
 
                 <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
                   <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy"
-                    alt="Ligula tristique quis risus" class="img-cover">
+                    alt="Food Distribution Program" class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">AI-Driven Art Instruction</a>
+                    <a href="#" class="card-title">Food Distribution Program</a>
                   </h3>
 
                   <p class="card-text">
-                    Interactive Painting Tutor (IPT) revolutionizes art education with AI-powered voice guidance and
-                    real-time feedback. Our platform offers step-by-step animated painting tutorials, ensuring an
-                    intuitive and immersive learning experience for artists of all levels.
-
-
+                    Our monthly food distribution program provides essential groceries and supplies to families in need. 
+                    Working with local partners, we ensure nutritious meals reach those facing food insecurity in our community.
                   </p>
 
                   <ul class="card-meta-list">
@@ -814,13 +973,13 @@
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="meta-text" datetime="2022-04-14">14 Apr 2022</time>
+                      <time class="meta-text" datetime="2024-04-14">14 Apr 2024</time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="meta-text">Coding</span>
+                      <span class="meta-text">Community Service</span>
                     </li>
 
                   </ul>
@@ -835,18 +994,18 @@
 
                 <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
                   <img src="./assets/images/blog-2.jpg" width="560" height="350" loading="lazy"
-                    alt="Watercolor Landscape Masterpiece" class="img-cover">
+                    alt="Educational Support Initiative" class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Watercolor Landscape Masterpiece</a>
+                    <a href="#" class="card-title">Educational Support Initiative</a>
                   </h3>
 
                   <p class="card-text">
-                    A stunning landscape created by one of our students using techniques learned from our AI-guided
-                    watercolor courses. See how proper brush control and color theory come together.
+                    Supporting students through scholarships, tutoring programs, and educational resources. We believe in 
+                    empowering the next generation through access to quality education.
                   </p>
 
                   <ul class="card-meta-list">
@@ -860,7 +1019,7 @@
                     <li class="card-meta-item">
                       <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="meta-text">Student Gallery</span>
+                      <span class="meta-text">Education</span>
                     </li>
 
                   </ul>
@@ -875,19 +1034,18 @@
 
                 <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
                   <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
-                    alt="Ultricies fusce porta elit" class="img-cover">
+                    alt="Family Support Services" class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">AR-Powered Virtual Painting Studio</a>
+                    <a href="#" class="card-title">Family Support Services</a>
                   </h3>
 
                   <p class="card-text">
-                    Experience the future of art education with IPT's dual-window interface, seamlessly integrating AI
-                    voice instruction with an AR-based virtual lab. Whether you're a beginner or a professional, our
-                    SaaS platform provides structured, interactive training to refine your artistic skills.
+                    Providing counseling, financial assistance, and support services to families facing challenges. Our 
+                    holistic approach helps families build stability and resilience.
                   </p>
 
                   <ul class="card-meta-list">
@@ -895,13 +1053,13 @@
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="meta-text" datetime="2022-02-26">26 Feb 2022</time>
+                      <time class="meta-text" datetime="2024-03-26">26 Mar 2024</time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
 
-                      <span class="meta-text">Meeting</span>
+                      <span class="meta-text">Family Services</span>
                     </li>
 
                   </ul>
@@ -909,6 +1067,132 @@
                 </div>
 
               </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-4.jpg" width="560" height="350" loading="lazy"
+                    alt="Youth Development Programs" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Youth Development Programs</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Engaging youth through mentorship, leadership training, and recreational activities. Building confident, 
+                    responsible, and community-minded young leaders.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2024-04-01">1 Apr 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Youth Programs</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-5.jpg" width="560" height="350" loading="lazy"
+                    alt="Emergency Relief Efforts" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Emergency Relief Efforts</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Responding quickly to community emergencies with essential supplies, temporary shelter, and crisis support. 
+                    Standing ready to help when disaster strikes.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2024-04-05">5 Apr 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Emergency Relief</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-6.jpg" width="560" height="350" loading="lazy"
+                    alt="Community Health Initiatives" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Community Health Initiatives</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Promoting community health through wellness programs, health education, and access to medical resources. 
+                    Working towards a healthier community for all.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2024-04-10">10 Apr 2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Healthcare</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
             </li>
 
           </ul>
@@ -931,7 +1215,7 @@
             Start Your Artistic Journey Today with Interactive Painting Tutor
           </h2>
 
-          <a href="#" class="btn btn-primary">Start Free Trial</a>
+          <a href="contact.html" class="btn btn-primary">Let’s Connect</a>
 
         </div>
       </section>
@@ -1137,7 +1421,7 @@
       font-weight: 700;
       color: white;
       line-height: 1;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .excellence-content {
@@ -1236,12 +1520,12 @@
       .focus-areas {
         grid-template-columns: 1fr;
       }
-      
+
       .categories-grid {
         grid-template-columns: 1fr;
         gap: 30px;
       }
-      
+
       .founding-text {
         font-size: 1.1rem;
         padding: 0 15px;
@@ -1259,7 +1543,7 @@
       left: 0;
       background: white;
       min-width: 200px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       opacity: 0;
       visibility: hidden;
@@ -1323,7 +1607,7 @@
         align-items: center;
       }
 
-      .dropdown > .navbar-link::after {
+      .dropdown>.navbar-link::after {
         content: '\f3d0';
         font-family: 'Ionicons';
         margin-left: 5px;
@@ -1342,7 +1626,7 @@
     counters.forEach(counter => {
       const target = +counter.getAttribute('data-target');
       const increment = target / 200;
-      
+
       const updateCounter = () => {
         const count = +counter.innerText;
         if (count < target) {
@@ -1352,7 +1636,7 @@
           counter.innerText = target;
         }
       };
-      
+
       updateCounter();
     });
 
