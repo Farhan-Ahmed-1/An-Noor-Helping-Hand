@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - An-Noor Cultural Services</title>
-  
+
   <!-- Same CSS and font imports as main page -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,14 +36,25 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 70%);
+      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
       animation: pulse 4s infinite;
     }
 
     @keyframes pulse {
-      0% { transform: scale(1); opacity: 0.5; }
-      50% { transform: scale(1.5); opacity: 0.2; }
-      100% { transform: scale(1); opacity: 0.5; }
+      0% {
+        transform: scale(1);
+        opacity: 0.5;
+      }
+
+      50% {
+        transform: scale(1.5);
+        opacity: 0.2;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 0.5;
+      }
     }
 
     .page-header h1 {
@@ -165,12 +176,10 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-      );
+      background: linear-gradient(90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent);
       transition: 0.5s;
     }
 
@@ -261,7 +270,7 @@
       .contact-container {
         grid-template-columns: 1fr;
       }
-      
+
       .contact-info {
         padding-right: 0;
       }
@@ -299,6 +308,351 @@
         box-shadow: 0 2px 10px rgba(0, 0, 255, 0.05);
       }
     }
+
+    .contact-section {
+      max-width: 1200px;
+      margin: 120px auto 60px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 0;
+    }
+
+    .contact-info {
+      padding: 60px;
+      background: #fff;
+    }
+
+    .contact-title {
+      font-size: 2.5rem;
+      color: #0f15b5;
+      margin-bottom: 20px;
+    }
+
+    .contact-text {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .contact-details {
+      margin-top: 40px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 35px;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .contact-item svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .contact-item p {
+      margin: 0;
+      padding-top: 4px;
+      color: #666;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    .contact-item svg {
+      fill: #0020bf;
+    }
+
+    .contact-details {
+      margin: 50px 0;
+    }
+
+    .contact-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      color: #666;
+    }
+
+    .social-connect {
+      margin-top: 40px;
+    }
+
+    .social-connect h3 {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      width: 40px;
+      height: 40px;
+      background: #0c1e92;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-3px);
+    }
+
+    .contact-form {
+      padding: 60px;
+      background: #1f08ae;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .form-title {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 15px 25px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 30px;
+      background: transparent;
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: #fff;
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+      padding: 20px 25px;
+    }
+
+    .submit-btn {
+      background: #fff;
+      color: #00bf8e;
+      padding: 20px 60px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 30px;
+      display: inline-block;
+      min-width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      background: #f8f8f8;
+    }
+
+    .form-group:last-child {
+      margin-bottom: 0;
+      margin-top: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Adjust the dots pattern to not interfere with the button */
+    .contact-form::before {
+      content: '';
+      position: absolute;
+      right: -50px;
+      bottom: -50px;
+      width: 200px;
+      height: 200px;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.2) 2px, transparent 2px);
+      background-size: 20px 20px;
+      z-index: 0;
+    }
+
+    /* Add a subtle highlight effect behind the button */
+    .form-group:last-child::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 60px;
+      z-index: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .contact-section {
+        margin: 100px 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .contact-info, .contact-form {
+        padding: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+        margin: 80px 20px;
+      }
+
+      .contact-info, .contact-form {
+        padding: 30px;
+      }
+
+      .contact-title {
+        font-size: 2rem;
+      }
+
+      .form-title {
+        font-size: 1.8rem;
+      }
+    }
+
+    .contact-text {
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .contact-details {
+      margin: 40px 0;
+    }
+
+    .social-connect {
+      margin-top: 40px;
+    }
+
+    main {
+      padding-top: var(--header-height, 80px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Add popup notification styles */
+    .popup-notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #fff;
+      padding: 20px 35px;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+      transform: translateX(200%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .popup-notification.show {
+      transform: translateX(0);
+    }
+
+    .popup-notification .icon {
+      background: #0020bf;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+    }
+
+    .popup-notification .icon svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+
+    .popup-notification .content {
+      flex: 1;
+    }
+
+    .popup-notification h3 {
+      color: #0020bf;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .popup-notification p {
+      color: #666;
+      margin: 0;
+    }
+
+    /* Add loading state for button */
+    .submit-btn.loading {
+      position: relative;
+      color: transparent;
+    }
+
+    .submit-btn.loading::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid #0020bf;
+      border-radius: 50%;
+      border-top-color: transparent;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
   </style>
 </head>
 
@@ -309,63 +663,73 @@
   </header>
 
   <main>
-    <div class="page-header">
-      <a href="index.html" class="back-button">
-        <ion-icon name="arrow-back-outline"></ion-icon>
-        Back
-      </a>
-      <h1>Contact Us</h1>
-    </div>
-
-    <div class="contact-container">
+    <div class="contact-section">
       <div class="contact-info">
-        <p>We welcome your questions and comments! Feel free to reach out to us anytime. Whether you have inquiries about our services or simply want to share your thoughts, we're here to listen and assist. Your engagement is important to us, and we look forward to connecting with you.</p>
-        
+        <h2 class="contact-title">Let's get in touch</h2>
+        <p class="contact-text">
+          We welcome your questions and comments! Feel free to reach out to us anytime. Whether you have inquiries about our services or simply want to share your thoughts, we're here to listen and assist. Your engagement is important to us, and we look forward to connecting with you.
+        </p>
+
         <div class="contact-details">
-          <h3>Phone</h3>
-          <p>+1 (718) 593-9938</p>
-          
-          <h3>Email</h3>
-          <p>info@annoorusa.org</p>
-          
-          <h3>Social Media</h3>
-          <div class="social-links">
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#00bf8e">
+              <path d="M12 0C7.802 0 4 3.403 4 7.602C4 11.8 7.469 16.812 12 24C16.531 16.812 20 11.8 20 7.602C20 3.403 16.199 0 12 0ZM12 11C10.343 11 9 9.657 9 8C9 6.343 10.343 5 12 5C13.657 5 15 6.343 15 8C15 9.657 13.657 11 12 11Z"/>
+            </svg>
+            <p>Jackson Heights, NY</p>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#00bf8e">
+              <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+            </svg>
+            <p>info@annoorusa.org</p>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#00bf8e">
+              <path d="M20 15.5C18.8 15.5 17.5 15.3 16.4 14.9C16.3 14.9 16.2 14.9 16.1 14.9C15.8 14.9 15.6 15 15.4 15.2L13.2 17.4C10.4 15.9 8 13.6 6.6 10.8L8.8 8.6C9.1 8.3 9.2 7.9 9 7.6C8.7 6.5 8.5 5.2 8.5 4C8.5 3.5 8 3 7.5 3H4C3.5 3 3 3.5 3 4C3 13.4 10.6 21 20 21C20.5 21 21 20.5 21 20V16.5C21 16 20.5 15.5 20 15.5ZM19 12H21C21 7 17 3 12 3V5C15.9 5 19 8.1 19 12ZM15 12H17C17 9.2 14.8 7 12 7V9C13.7 9 15 10.3 15 12Z"/>
+            </svg>
+            <p>+1 (718) 593-9938</p>
+          </div>
+        </div>
+
+        <div class="social-connect">
+          <h3>Connect with us :</h3>
+          <div class="social-icons">
             <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
             <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
           </div>
         </div>
       </div>
 
       <div class="contact-form">
-        <div class="form-row">
-          <div class="form-field">
-            <input type="text" placeholder="First Name" required>
+        <h2 class="form-title">Contact us</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username" required>
           </div>
-          <div class="form-field">
-            <input type="text" placeholder="Last Name" required>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" required>
           </div>
-        </div>
-        <div class="form-field">
-          <input type="email" placeholder="Email" required>
-        </div>
-        <div class="form-field">
-          <input type="tel" placeholder="Phone">
-        </div>
-        <div class="form-field">
-          <textarea placeholder="Message" required></textarea>
-        </div>
-        <button class="send-button">Send</button>
+          <div class="form-group">
+            <input type="tel" class="form-control" placeholder="Phone" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Message" required></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Send" class="submit-btn">
+          </div>
+        </form>
       </div>
     </div>
 
-    <div class="locations-section">
+    <section class="locations-section">
       <div class="locations-title">
         <h2>Our Locations</h2>
         <p>We operate in the following locations, feel free to drop by and get to know us.</p>
       </div>
-      
+
       <div class="locations-grid">
         <div class="location-card">
           <img src="./assets/images/first-image.png" alt="An-Noor Cultural Center on 37th Ave" class="location-image">
@@ -407,7 +771,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <!-- Include the same footer as main page -->
@@ -415,9 +779,55 @@
     <!-- ... footer content ... -->
   </footer>
 
+  <!-- Add popup notification HTML -->
+  <div class="popup-notification" id="successPopup">
+    <div class="icon">
+      <svg viewBox="0 0 24 24">
+        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+      </svg>
+    </div>
+    <div class="content">
+      <h3>Success!</h3>
+      <p>Your message has been sent successfully.</p>
+    </div>
+  </div>
+
+  <!-- Add JavaScript for form handling -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('.contact-form form');
+      const submitBtn = form.querySelector('.submit-btn');
+      const popup = document.getElementById('successPopup');
+
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Add loading state
+        submitBtn.classList.add('loading');
+        
+        // Simulate form submission delay (replace with actual form submission)
+        await new Promise(resolve => setTimeout(resolve, 1500));
+        
+        // Remove loading state
+        submitBtn.classList.remove('loading');
+        
+        // Show success popup
+        popup.classList.add('show');
+        
+        // Clear form
+        form.reset();
+        
+        // Hide popup after 3 seconds
+        setTimeout(() => {
+          popup.classList.remove('show');
+        }, 3000);
+      });
+    });
+  </script>
+
   <!-- Include the same scripts as main page -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
-</html> 
+</html>
